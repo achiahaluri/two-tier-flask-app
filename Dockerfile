@@ -13,7 +13,6 @@ RUN pip install mysqlclient
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY templates ./templates
-COPY static ./static
 
 COPY dist/app.py ./app.py
 COPY dist/pyarmor_runtime_000000 ./pyarmor_runtime_000000
